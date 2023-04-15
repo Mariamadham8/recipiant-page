@@ -1,0 +1,110 @@
+
+*{ 
+    padding: 0; 
+    margin:0; 
+    box-sizing: border-box; 
+    font-family: 'Times New Roman', Times, serif; 
+} 
+body{ 
+background-image: url("nn.jpg") ;
+ background-size: cover;
+background-repeat: no-repeat;
+ background-position: center center;
+     
+}
+.container { 
+position:relative;
+width:  650px;
+height: 550px;
+margin: 50px;
+ box-shadow:20px 20px 50px rgba(0, 0,0,0.5) ;  
+border-radius: 15px;
+background: rgba(255, 255,255,0.1); 
+overflow: hidden;
+ display:flex; 
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgba(255, 255,255,0.5);
+border-left: 1px solid rgba(255, 255,255,0.5);
+ backdrop-filter:blur(5px); 
+left:300px;
+transition: 0.5s;
+
+} 
+ 
+.right{ 
+    padding: 25px; 
+} 
+
+h3::before{ 
+    position: relative; 
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
+} 
+h3 ::after{ 
+    content: ''; 
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    transform: translateX(-50%); 
+    height: 4px; 
+    width: 50px; 
+    border-radius: 2px; 
+    background-color: #2ecc71; 
+}
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: center;
+}
+.popup{
+    width: 400px;
+    background: #e7e3e3;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-10%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-30%) scale(1);
+}
+
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0  2px 5px rgba(0, 0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding:10px 0;
+    background: #ef98ac;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

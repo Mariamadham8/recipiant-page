@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>contact us</title> 
+<link rel="stylesheet" href="mariamabdo.css"> 
+    </head> 
+    <body> 
+        <!-- <h1>uDONATE</h1>  -->
+        <div class="container"> 
+            <div class="data-box"> 
+                <!-- <div class="left"></div>  -->
+                <div class="right"> 
+                    <h3>Please fill the form</h3> 
+                    Name<br> 
+                    <input type="text" class="field"><br><br>  
+                    Phone<br>  
+                    <input type="text" class="field"><br><br> 
+                    Address<br> 
+                    <input type="text" class="field"><br><br> 
+                    Blood Type<br> 
+                    <input type="text" class="field"><br><br> 
+                    Age<br> 
+                    <input type="text" class="field"><br><br> 
+                    wieght<br>    
+                    <input type="text" class="field"><br><br> 
+                    Gender 
+                    <input type="radio" name="male" id="male" value="male"><label>Male</label> 
+                    <input type="radio" name="female" id="female" value="female"><label>Female</label><br><br> 
+                    Do you have chronic or infectious diseases?     
+                    <input type="radio" name="have disease" id="yes" value="Yes"><label>Yes</label> 
+                    <input type="radio" name=" not have disease" id="no" value="no"><label>No</label><br><br> 
+                    <input type="submit" value="Send" class="btn" onclick="openPopup()">
+                    <div class="popup" id="popup">
+                        <img src="blood donate1.jpg">
+                         <h2>Thank You!</h2>
+                         <p>may god cure you <br>
+                            as your status we will provide you with a donor as fast as posible your hospital 
+                            will be apdated with the details about the donor!</p>
+                         <button type="button" onclick="closePopup()">OK!</button>
+                     </div>
+                    </div>
+                 <script>
+                 let popup=document.getElementById("popup");
+                 function openPopup(){
+                     popup.classList.add("open-popup");
+                 }
+                 
+                 function closePopup(){
+                     popup.classList.remove("open-popup");
+                 } 
+                </script>
+                 </div> 
+            </div> 
+         </div> 
+    </body> 
+</html>
